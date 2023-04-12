@@ -1,10 +1,20 @@
-import React from "react";
+import React, { useState } from "react";
 import "./Footer.css";
 import FacebookIcon from "./icons/icons8-facebook-100.svg";
 import PinterestIcon from "./icons/icons8-pinterest-100.svg";
 import InstagramIcon from "./icons/icons8-instagram-100.svg";
 
 const Footer = () => {
+  const [email, setEmail] = useState("");
+  const [isSubscribed, setIsSubscribed] = useState(false);
+
+  const handleSubmit = (event) => {
+    event.preventDefault();
+    setIsSubscribed(true);
+
+    setTimeout(() => setIsSubscribed(false), 4000);
+    setEmail("");
+  };
   return (
     <footer>
       <hr></hr>
@@ -29,7 +39,7 @@ const Footer = () => {
         </div>
       </div>
 
-      <form className="flex flex-col mt-5 mb-10">
+      <form className="flex flex-col mt-5 mb-10" onSubmit={handleSubmit}>
         <label className="text-2xl text-black" htmlFor="email">
           Join Our Mailing List
         </label>
@@ -38,14 +48,20 @@ const Footer = () => {
             type="email"
             id="email"
             name="email"
+            value={email}
             placeholder="Enter your email here*"
+            onChange={(event) => {
+              setEmail(event.target.value);
+            }}
             required
           />
           <button className="subscribe-button" type="submit">
             Subscribe Now
           </button>
         </div>
-        <p className="mt-3 text-black ">Thank you for subscribing!</p>
+        <p className="mt-3 text-black ">
+          {isSubscribed && "Thank you for subscribing!"}
+        </p>
       </form>
       <p className="pb-5">
         This website design was created by Wix.com, and is used here for
