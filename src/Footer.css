@@ -1,0 +1,32 @@
+h4 {
+  font-size: 30px;
+  color: black;
+}
+
+.footer-menu a,
+.extra-menu a {
+  color: rgb(122, 108, 108);
+}
+
+.footer-icons img {
+  padding: 0 10px;
+  cursor: pointer;
+}
+
+footer form input {
+  width: 250px;
+}
+
+.subscribe-button {
+  margin-left: 10px;
+  font-size: 20px;
+  border: 1px solid black;
+  color: white;
+  background-color: black;
+  padding: 5px 20px;
+  transition: all ease-in-out 250ms;
+}
+
+.subscribe-button:hover {
+  background-color: rgb(206, 68, 9);
+}
