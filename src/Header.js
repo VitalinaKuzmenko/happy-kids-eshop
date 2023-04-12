@@ -7,13 +7,13 @@ const Header = () => {
   return (
     <>
       <h1>happy kids</h1>
-      <header class="header">
+      <header class="header__">
         <input className="search-input" type="text" placeholder="Search..." />
         <input class="menu-btn" type="checkbox" id="menu-btn" />
         <label class="menu-icon" for="menu-btn">
           <span class="navicon"></span>
         </label>
-        <ul class="menu">
+        <ul class="menu__">
           <li>
             <a href="#work">Home</a>
           </li>
