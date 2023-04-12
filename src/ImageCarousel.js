@@ -1,4 +1,5 @@
 import React from "react";
+import "./ImageCarousel.css";
 import Image1 from "./media/Carousel_image_1.webp";
 import Image2 from "./media/Carousel_image_2.webp";
 import Image3 from "./media/Carousel_image_3.webp";
@@ -30,24 +31,24 @@ const ImageCarousel = () => {
         </div>
       </div>
       {/* <!-- Slider indicators --> */}
-      <div class="absolute z-30 flex space-x-3 -translate-x-1/2 bottom-5 left-1/2">
+      <div className="absolute z-30 flex space-x-3 -translate-x-1/2 bottom-5 left-1/2">
         <button
           type="button"
-          class="w-3 h-3 rounded-full"
+          className="w-3 h-3 rounded-full"
           aria-current="true"
           aria-label="Slide 1"
           data-carousel-slide-to="0"
         ></button>
         <button
           type="button"
-          class="w-3 h-3 rounded-full"
+          className="w-3 h-3 rounded-full"
           aria-current="false"
           aria-label="Slide 2"
           data-carousel-slide-to="1"
         ></button>
         <button
           type="button"
-          class="w-3 h-3 rounded-full"
+          className="w-3 h-3 rounded-full"
           aria-current="false"
           aria-label="Slide 3"
           data-carousel-slide-to="2"
@@ -69,9 +70,9 @@ const ImageCarousel = () => {
             xmlns="http://www.w3.org/2000/svg"
           >
             <path
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              stroke-width="2"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              strokeWidth="2"
               d="M15 19l-7-7 7-7"
             ></path>
           </svg>
@@ -93,9 +94,9 @@ const ImageCarousel = () => {
             xmlns="http://www.w3.org/2000/svg"
           >
             <path
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              stroke-width="2"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              strokeWidth="2"
               d="M9 5l7 7-7 7"
             ></path>
           </svg>

@@ -1,0 +1,9 @@
+[
+  {
+    "id": 1,
+    "image": "./media/Item_1.webp",
+    "name": "Green T-shirt",
+    "price": "$19.99",
+    "rating": "3"
+  }
+]

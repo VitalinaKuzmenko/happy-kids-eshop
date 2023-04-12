@@ -7,13 +7,13 @@ const Header = () => {
   return (
     <>
       <h1>happy kids</h1>
-      <header class="header__">
+      <header className="header__">
         <input className="search-input" type="text" placeholder="Search..." />
-        <input class="menu-btn" type="checkbox" id="menu-btn" />
-        <label class="menu-icon" for="menu-btn">
-          <span class="navicon"></span>
+        <input className="menu-btn" type="checkbox" id="menu-btn" />
+        <label className="menu-icon" htmlFor="menu-btn">
+          <span className="navicon"></span>
         </label>
-        <ul class="menu__">
+        <ul className="menu__">
           <li>
             <a href="#work">Home</a>
           </li>
@@ -34,7 +34,7 @@ const Header = () => {
           </div>
           <div className="basket flex items-center px-5 cursor-pointer">
             <img className="pb-1 " src={Basket} alt="basket-icon" />
-            <p class="text-on-cart">0</p>
+            <p className="text-on-cart">0</p>
           </div>
         </div>
       </header>
