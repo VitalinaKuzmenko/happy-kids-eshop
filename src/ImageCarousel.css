@@ -6,7 +6,7 @@
 }
 
 .text-on-image h1 {
-  font-size: 50px;
+  font-size: 30px;
 }
 
 .text-on-image button {
@@ -18,4 +18,21 @@
 .text-on-image button:hover {
   color: white;
   background-color: black;
+}
+
+.image-box {
+  height: 100%;
+  width: 100%;
+}
+
+.image-box img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+@media (min-width: 915px) {
+  .text-on-image h1 {
+    font-size: 50px;
+  }
 }

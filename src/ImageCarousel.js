@@ -14,7 +14,10 @@ const ImageCarousel = () => {
       {/* <!-- Carousel wrapper --> */}
       <div className="relative h-56 overflow-hidden rounded-lg md:h-96">
         {/* <!-- Item 1 --> */}
-        <div className="hidden duration-1000 ease-in-out " data-carousel-item>
+        <div
+          className="image-box hidden duration-1000 ease-in-out"
+          data-carousel-item
+        >
           <img src={Image1} alt="..." />
           <div className="text-on-image absolute">
             <h1>NEW COLLECTION</h1>
@@ -22,11 +25,17 @@ const ImageCarousel = () => {
           </div>
         </div>
         {/* <!-- Item 2 --> */}
-        <div className="hidden duration-1000 ease-in-out" data-carousel-item>
+        <div
+          className="image-box hidden duration-1000 ease-in-out"
+          data-carousel-item
+        >
           <img src={Image2} alt="..." />
         </div>
         {/* <!-- Item 3 --> */}
-        <div className="hidden duration-1000 ease-in-out" data-carousel-item>
+        <div
+          className="image-box hidden duration-1000 ease-in-out"
+          data-carousel-item
+        >
           <img src={Image3} alt="..." />
         </div>
       </div>
