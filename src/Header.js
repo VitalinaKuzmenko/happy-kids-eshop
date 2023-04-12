@@ -27,14 +27,16 @@ const Header = () => {
             <a href="#contact">Contact</a>
           </li>
         </ul>
-        <div className="icons flex content-between mx-8">
-          <div className="login flex items-center mx-5 cursor-pointer">
-            <p className="pr-2">Login</p>
-            <img src={Login} alt="login-icon" />
-          </div>
-          <div className="basket flex items-center px-5 cursor-pointer">
-            <img className="pb-1 " src={Basket} alt="basket-icon" />
-            <p className="text-on-cart">0</p>
+        <div className="mt-4">
+          <div className="icons flex content-between block">
+            <div className="login flex items-center cursor-pointer block">
+              <p className="pr-2">Login</p>
+              <img src={Login} alt="login-icon" />
+            </div>
+            <div className="basket flex items-center px-5 cursor-pointer">
+              <img className="pb-1 " src={Basket} alt="basket-icon" />
+              <p className="text-on-cart">0</p>
+            </div>
           </div>
         </div>
       </header>
