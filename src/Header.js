@@ -2,6 +2,7 @@ import React from "react";
 import "./Header.css";
 import Login from "./icons/login.svg";
 import Basket from "./icons/cart.svg";
+import { NavLink, Link } from "react-router-dom";
 
 const Header = () => {
   return (
@@ -15,16 +16,16 @@ const Header = () => {
         </label>
         <ul className="menu__">
           <li>
-            <a href="#work">Home</a>
+            <NavLink to="/">Home</NavLink>
           </li>
           <li>
-            <a href="#about">Shop Collection</a>
+            <NavLink to="/shop">Shop Collection</NavLink>
           </li>
           <li>
-            <a href="#careers">Our Story</a>
+            <NavLink to="/about">Our Story</NavLink>
           </li>
           <li>
-            <a href="#contact">Contact</a>
+            <NavLink to="/contact">Contact</NavLink>
           </li>
         </ul>
         <div className="mt-4">
@@ -33,10 +34,12 @@ const Header = () => {
               <p className="pr-2">Login</p>
               <img src={Login} alt="login-icon" />
             </div>
-            <div className="basket flex items-center px-5 cursor-pointer">
-              <img className="pb-1 " src={Basket} alt="basket-icon" />
-              <p className="text-on-cart">0</p>
-            </div>
+            <Link to="/checkout">
+              <div className="basket flex items-center px-5 cursor-pointer">
+                <img className="pb-1 " src={Basket} alt="basket-icon" />
+                <p className="text-on-cart">0</p>
+              </div>
+            </Link>
           </div>
         </div>
       </header>

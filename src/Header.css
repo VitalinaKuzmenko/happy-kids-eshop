@@ -42,6 +42,10 @@ h1 {
   color: rgb(206, 68, 9);
 }
 
+.header__ li a.active {
+  color: rgb(206, 68, 9);
+}
+
 .header__ .logo {
   display: block;
   float: left;

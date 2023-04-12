@@ -1,3 +1,9 @@
+footer {
+  max-width: 1550px;
+  display: block;
+  margin: 0 auto;
+}
+
 h4 {
   font-size: 30px;
   color: black;
