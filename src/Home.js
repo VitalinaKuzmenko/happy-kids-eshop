@@ -14,6 +14,7 @@ const Home = () => {
       {newCollection.map((item) => {
         return <Product key={item.id} item={item} />;
       })}
+      <div className="flex flex-col"></div>
     </>
   );
 };
