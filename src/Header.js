@@ -9,9 +9,9 @@ const Header = () => {
       <h1>happy kids</h1>
       <header className="header__">
         <input className="search-input" type="text" placeholder="Search..." />
-        <input className="menu-btn" type="checkbox" id="menu-btn" />
-        <label className="menu-icon" htmlFor="menu-btn">
-          <span className="navicon"></span>
+        <input className="menu-btn__" type="checkbox" id="menu-btn__" />
+        <label className="menu-icon__" htmlFor="menu-btn__">
+          <span className="navicon__"></span>
         </label>
         <ul className="menu__">
           <li>
