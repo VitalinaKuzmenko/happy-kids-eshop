@@ -1,0 +1,20 @@
+.product {
+  font-size: 20px;
+  padding: 0 30px;
+}
+
+.product h1 {
+  font-size: 27px;
+  font-family: var(--p-font);
+}
+
+.product button {
+  border: 1px solid black;
+  color: black;
+  transition: all ease-in-out 250ms;
+}
+
+.product button:hover {
+  color: white;
+  background-color: black;
+}

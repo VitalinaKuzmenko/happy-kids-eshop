@@ -11,9 +11,11 @@ const Home = () => {
       <div>
         <ImageCarousel />
       </div>
-      {newCollection.map((item) => {
-        return <Product key={item.id} item={item} />;
-      })}
+      <div className="flex flex-wrap justify-center">
+        {newCollection.map((item) => {
+          return <Product key={item.id} item={item} />;
+        })}
+      </div>
       <div className="flex flex-col"></div>
     </>
   );
