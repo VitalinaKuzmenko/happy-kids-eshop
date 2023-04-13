@@ -1,0 +1,73 @@
+[
+  {
+    "id": 1,
+    "image": "/product_images/Item_1.webp",
+    "name": "Brown T-shirt",
+    "price": 19.99,
+    "rating": 3
+  },
+  {
+    "id": 2,
+    "image": "/product_images/Item_2.webp",
+    "name": "Black and Blue T-shirt",
+    "price": 25.99,
+    "rating": 2
+  },
+  {
+    "id": 3,
+    "image": "/product_images/Item_3.webp",
+    "name": "White T-shirt with Big Blue Print",
+    "price": 25.99,
+    "rating": 2
+  },
+  {
+    "id": 4,
+    "image": "/product_images/Item_4.webp",
+    "name": "T-shirt with Orange Stripes",
+    "price": 25.99,
+    "rating": 2
+  },
+  {
+    "id": 5,
+    "image": "/product_images/Item_5.webp",
+    "name": "Black and White T-shirt",
+    "price": 25.99,
+    "rating": 2
+  },
+  {
+    "id": 6,
+    "image": "/product_images/Item_6.webp",
+    "name": "Colorful T-shirt",
+    "price": 25.99,
+    "rating": 2
+  },
+  {
+    "id": 7,
+    "image": "/product_images/Item_7.webp",
+    "name": "Body with Blue Spots",
+    "price": 25.99,
+    "rating": 2
+  },
+  {
+    "id": 8,
+    "image": "/product_images/Item_8.webp",
+    "name": "Body with Brown Circles",
+    "price": 25.99,
+    "rating": 2
+  },
+  {
+    "id": 9,
+    "image": "/product_images/Item_9.webp",
+    "name": "Colorful Body",
+    "price": 25.99,
+    "rating": 2
+  },
+
+  {
+    "id": 10,
+    "image": "/product_images/Item_10.webp",
+    "name": "White and Blue Body",
+    "price": 30.99,
+    "rating": 4
+  }
+]
