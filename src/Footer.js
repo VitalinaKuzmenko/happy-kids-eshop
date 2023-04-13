@@ -3,6 +3,7 @@ import "./Footer.css";
 import FacebookIcon from "./icons/icons8-facebook-100.svg";
 import PinterestIcon from "./icons/icons8-pinterest-100.svg";
 import InstagramIcon from "./icons/icons8-instagram-100.svg";
+import { Link } from "react-router-dom";
 
 const Footer = () => {
   const [email, setEmail] = useState("");
@@ -21,10 +22,10 @@ const Footer = () => {
       <h4 className="mt-8 text-center">happy kids</h4>
       <div className="flex flex-col justify-around my-8 md:flex-row">
         <div className="footer-menu flex flex-col my-3 mx-3">
-          <a href="#">Home</a>
-          <a href="#">Shop Collection</a>
-          <a href="#">Our Story</a>
-          <a href="#">Contact</a>
+          <Link to="/">Home</Link>
+          <Link to="/shop">Shop Collection</Link>
+          <Link to="/about">Our Story</Link>
+          <Link to="/contact">Contact</Link>
         </div>
         <div className="footer-icons flex justify-center items-start my-3">
           <img src={FacebookIcon} alt="facebook-icon" />
@@ -32,10 +33,10 @@ const Footer = () => {
           <img src={InstagramIcon} alt="facebook-icon" />
         </div>
         <div className="extra-menu flex flex-col my-3 mx-3">
-          <a href="#">Shipping & Returns</a>
-          <a href="#">Store Policy</a>
-          <a href="#">Payment Methods</a>
-          <a href="#">FAQ</a>
+          <p>Shipping & Returns</p>
+          <p>Store Policy</p>
+          <p>Payment Methods</p>
+          <p>FAQ</p>
         </div>
       </div>
 

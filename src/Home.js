@@ -2,6 +2,7 @@ import React from "react";
 import "./Home.css";
 import ImageCarousel from "./ImageCarousel";
 import NewArrival from "./NewArrival";
+import { Link } from "react-router-dom";
 
 const Home = () => {
   return (
@@ -10,7 +11,9 @@ const Home = () => {
         <ImageCarousel />
       </div>
       <NewArrival />
-      <button className="shop-all-button">Shop All</button>
+      <Link to="/shop">
+        <button className="shop-all-button">Shop All</button>
+      </Link>
     </>
   );
 };

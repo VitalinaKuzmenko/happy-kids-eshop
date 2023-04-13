@@ -1,5 +1,6 @@
 import React from "react";
 import "./ImageCarousel.css";
+import { Link } from "react-router-dom";
 
 const ImageCarousel = () => {
   return (
@@ -21,7 +22,9 @@ const ImageCarousel = () => {
           />
           <div className="text-on-image absolute">
             <h1>NEW COLLECTION</h1>
-            <button>Shop Now</button>
+            <Link to="/shop">
+              <button>Shop Now</button>
+            </Link>
           </div>
         </div>
         {/* <!-- Item 2 --> */}
