@@ -3,8 +3,10 @@ import "./Header.css";
 import Login from "./icons/login.svg";
 import Basket from "./icons/cart.svg";
 import { NavLink, Link } from "react-router-dom";
+import { useStateValue } from "./StateProvider";
 
 const Header = () => {
+  const [{ basket }, dispatch] = useStateValue();
   return (
     <>
       <h1>happy kids</h1>
@@ -37,7 +39,7 @@ const Header = () => {
             <Link to="/checkout">
               <div className="basket flex items-center px-5 cursor-pointer">
                 <img className="pb-1 " src={Basket} alt="basket-icon" />
-                <p className="text-on-cart">0</p>
+                <p className="text-on-cart">{basket.length}</p>
               </div>
             </Link>
           </div>
