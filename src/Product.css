@@ -3,18 +3,33 @@
   padding: 0 30px;
 }
 
-.product h1 {
+.product h1,
+.checkout-product h1 {
   font-size: 27px;
   font-family: var(--p-font);
 }
 
-.product button {
+.product button,
+.checkout-product button {
   border: 1px solid black;
   color: black;
   transition: all ease-in-out 250ms;
 }
 
-.product button:hover {
+.product button:hover,
+.checkout-product button:hover {
   color: white;
   background-color: black;
+}
+
+/* checkout page */
+.checkout-image {
+  width: 180px;
+  height: auto;
+}
+
+.checkout-product {
+  font-size: 20px;
+  margin-top: 10px;
+  padding: 0 30px;
 }
