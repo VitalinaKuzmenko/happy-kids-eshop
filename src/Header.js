@@ -32,10 +32,12 @@ const Header = () => {
         </ul>
         <div className="mt-4">
           <div className="icons flex content-between block">
-            <div className="login flex items-center cursor-pointer block">
-              <p className="pr-2">Login</p>
-              <img src={Login} alt="login-icon" />
-            </div>
+            <Link to="/login">
+              <div className="login flex items-center cursor-pointer block">
+                <p className="pr-2">Login</p>
+                <img src={Login} alt="login-icon" />
+              </div>
+            </Link>
             <Link to="/checkout">
               <div className="basket flex items-center px-5 cursor-pointer">
                 <img className="pb-1 " src={Basket} alt="basket-icon" />

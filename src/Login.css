@@ -1,0 +1,69 @@
+.login {
+  background-image: url("../public/Carousel_images/Carousel_image_1.webp");
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 100vh;
+}
+
+.logoTitle {
+  font-size: 50px;
+  padding-top: 50px;
+}
+
+.login__container {
+  display: block;
+  margin: 20px auto;
+  padding: 30px;
+  max-width: 500px;
+  border: 1px solid black;
+  text-align: left;
+  color: black;
+  background-color: #f1e1ed;
+}
+
+.login__container h1 {
+  font-family: var(--p-font);
+  font-size: 50px;
+}
+
+.login form {
+  display: flex;
+  flex-direction: column;
+}
+
+.login form label {
+  margin-top: 10px;
+}
+
+.login__signInButton {
+  margin-top: 30px;
+  font-size: 20px;
+  border: 1px solid black;
+  color: white;
+  background-color: black;
+  padding: 8px 0;
+
+  transition: all ease-in-out 250ms;
+}
+
+.login__signInButton:hover {
+  background-color: rgb(206, 68, 9);
+}
+
+.login p {
+  margin: 20px 0;
+}
+
+.login__registerButton {
+  padding: 8px 0;
+  border: 1px solid black;
+  color: white;
+  transition: all ease-in-out 250ms;
+  width: 100%;
+  background-color: #919085;
+}
+
+.login__registerButton:hover {
+  background-color: black;
+  color: white;
+}
