@@ -1,13 +1,38 @@
 import React, { useState } from "react";
 import "./Login.css";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
+import { auth } from "./Firebase";
 
 const Login = () => {
+  const navigate = useNavigate();
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
 
+  const signIn = (e) => {
+    e.preventDefault();
+
+    auth
+      .signInWithEmailAndPassword(email, password)
+      .then((auth) => {
+        navigate("/");
+      })
+      .catch((error) => alert(error.message));
+  };
+
+  const register = (e) => {
+    e.preventDefault();
+
+    auth
+      .createUserWithEmailAndPassword(email, password)
+      .then((auth) => {
+        if (auth) {
+          navigate("/");
+        }
+      })
+      .catch((error) => alert(error.message));
+  };
   return (
-    <div className="login">
+    <div className="login_page">
       <Link to="/" style={{ textDecoration: "none" }}>
         <h2 className="logoTitle">happy kids</h2>
       </Link>
@@ -15,7 +40,7 @@ const Login = () => {
       <div className="login__container">
         <h1>Sign-in</h1>
 
-        <form>
+        <form onSubmit={signIn}>
           <label htmlFor="email">E-mail*</label>
           <input
             type="text"
@@ -34,11 +59,7 @@ const Login = () => {
             required
           />
 
-          <button
-            type="submit"
-            className="login__signInButton"
-            // onClick={signIn}
-          >
+          <button type="submit" className="login__signInButton">
             Sign In
           </button>
         </form>
@@ -50,7 +71,7 @@ const Login = () => {
         </p>
 
         {/* <button className="login__registerButton" onClick={register}> */}
-        <button className="login__registerButton">
+        <button onClick={register} className="login__registerButton">
           Create your Happy Kids Account
         </button>
       </div>

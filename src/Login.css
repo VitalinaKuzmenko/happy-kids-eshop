@@ -1,8 +1,12 @@
-.login {
+.login_page {
   background-image: url("../public/Carousel_images/Carousel_image_1.webp");
   background-repeat: no-repeat;
   background-size: cover;
   min-height: 100vh;
+}
+
+.login_page h2:hover {
+  color: #919085;
 }
 
 .logoTitle {
@@ -26,12 +30,12 @@
   font-size: 50px;
 }
 
-.login form {
+.login_page form {
   display: flex;
   flex-direction: column;
 }
 
-.login form label {
+.login_page form label {
   margin-top: 10px;
 }
 
@@ -50,7 +54,7 @@
   background-color: rgb(206, 68, 9);
 }
 
-.login p {
+.login_page p {
   margin: 20px 0;
 }
 
