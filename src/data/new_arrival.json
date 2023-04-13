@@ -3,21 +3,21 @@
     "id": 1,
     "image": "/product_images/Item_1.webp",
     "name": "Green T-shirt",
-    "price": "$19.99",
+    "price": 19.99,
     "rating": 3
   },
   {
     "id": 2,
     "image": "/product_images/Item_5.webp",
     "name": "Black and White T-shirt",
-    "price": "$25.99",
+    "price": 25.99,
     "rating": 2
   },
   {
     "id": 3,
     "image": "/product_images/Item_10.webp",
     "name": "White and Blue Body",
-    "price": "$30.99",
+    "price": 30.99,
     "rating": 4
   }
 ]
