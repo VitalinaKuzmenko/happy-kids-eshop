@@ -1,8 +1,5 @@
 import React from "react";
 import "./ImageCarousel.css";
-import Image1 from "./media/Carousel_image_1.webp";
-import Image2 from "./media/Carousel_image_2.webp";
-import Image3 from "./media/Carousel_image_3.webp";
 
 const ImageCarousel = () => {
   return (
@@ -18,7 +15,10 @@ const ImageCarousel = () => {
           className="image-box hidden duration-1000 ease-in-out"
           data-carousel-item
         >
-          <img src={Image1} alt="..." />
+          <img
+            src="/Carousel_images/Carousel_image_1.webp"
+            alt="Carousel_image"
+          />
           <div className="text-on-image absolute">
             <h1>NEW COLLECTION</h1>
             <button>Shop Now</button>
@@ -29,14 +29,20 @@ const ImageCarousel = () => {
           className="image-box hidden duration-1000 ease-in-out"
           data-carousel-item
         >
-          <img src={Image2} alt="..." />
+          <img
+            src="/Carousel_images/Carousel_image_2.webp"
+            alt="Carousel_image"
+          />
         </div>
         {/* <!-- Item 3 --> */}
         <div
           className="image-box hidden duration-1000 ease-in-out"
           data-carousel-item
         >
-          <img src={Image3} alt="..." />
+          <img
+            src="/Carousel_images/Carousel_image_3.webp"
+            alt="Carousel_image"
+          />
         </div>
       </div>
       {/* <!-- Slider indicators --> */}
