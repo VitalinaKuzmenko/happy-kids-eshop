@@ -12,6 +12,12 @@ const CheckoutPage = () => {
       <Header />
       <div className="flex">
         <div className="checkout=products w-2/3">
+          <h1
+            className="text-5xl mt-7 ml-12 text-left"
+            style={{ fontFamily: "var(--p-font)" }}
+          >
+            Your Shopping Basket
+          </h1>
           {basket.map((item) => {
             return <CheckoutProduct item={item} />;
           })}
