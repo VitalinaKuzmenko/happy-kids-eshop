@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "./ImageCarousel.css";
 import { Link } from "react-router-dom";
 
@@ -19,7 +19,7 @@ const ImageCarousel = () => {
     }
   }
 
-  React.useEffect(() => {
+  useEffect(() => {
     resetTimeout();
     timeoutRef.current = setTimeout(
       () =>
@@ -32,6 +32,7 @@ const ImageCarousel = () => {
     return () => {
       resetTimeout();
     };
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [index]);
 
   return (

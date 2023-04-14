@@ -6,6 +6,7 @@ import SubTotal from "../SubTotal";
 import { useStateValue } from "../StateProvider";
 
 const CheckoutPage = () => {
+  // eslint-disable-next-line no-unused-vars
   const [{ basket }, dispatch] = useStateValue();
 
   return (
