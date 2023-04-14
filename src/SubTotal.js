@@ -4,6 +4,7 @@ import { useStateValue } from "./StateProvider";
 import { getBasketTotal } from "./Reducer";
 
 const SubTotal = () => {
+  // eslint-disable-next-line no-unused-vars
   const [{ basket }, dispatch] = useStateValue();
   return (
     <div className="subtotal ml-12 mr-12">
