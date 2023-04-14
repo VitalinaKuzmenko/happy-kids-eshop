@@ -3,7 +3,11 @@ import React from "react";
 const About = () => {
   return (
     <div className="mb-12">
-      <img src="/About_image.webp" alt="kids room" />
+      <img
+        className="block my-0 mx-auto"
+        src="/About_image.webp"
+        alt="kids room"
+      />
       <h1 className="text-4xl mt-7" style={{ fontFamily: "var(--p-font)" }}>
         Our Story
       </h1>

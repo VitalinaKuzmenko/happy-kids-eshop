@@ -12,7 +12,7 @@ const CheckoutPage = () => {
   return (
     <>
       <Header />
-      <div className="flex checkout-grid">
+      <div className="flex checkout-grid mb-5">
         <div className="checkout=products mr-12 mb-10 sm:w-2/3">
           <h1
             className="text-5xl mt-7 ml-12 text-left"
