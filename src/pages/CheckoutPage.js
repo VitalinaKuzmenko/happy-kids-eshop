@@ -7,6 +7,7 @@ import { useStateValue } from "../StateProvider";
 
 const CheckoutPage = () => {
   const [{ basket }, dispatch] = useStateValue();
+
   return (
     <>
       <Header />
@@ -19,7 +20,7 @@ const CheckoutPage = () => {
             Your Shopping Basket
           </h1>
           {basket.map((item) => {
-            return <CheckoutProduct item={item} />;
+            return <CheckoutProduct key={item.id} item={item} />;
           })}
         </div>
         <SubTotal />
