@@ -7,7 +7,7 @@ const About = () => {
       <h1 className="text-4xl mt-7" style={{ fontFamily: "var(--p-font)" }}>
         Our Story
       </h1>
-      <div className="mt-5 max-w-2xl block mx-auto text-cyan-800 text-lg">
+      <div className="mt-5 px-5 max-w-2xl block mx-auto text-cyan-800 text-lg">
         <p className="mb-5">
           Welcome to our online shop, "Happy Kids" where we offer a wide
           selection of fashionable and comfortable kids clothes for babies,

@@ -11,14 +11,15 @@ const CheckoutPage = () => {
   return (
     <>
       <Header />
-      <div className="flex">
-        <div className="checkout=products w-2/3">
+      <div className="flex checkout-grid">
+        <div className="checkout=products mr-12 mb-10 sm:w-2/3">
           <h1
             className="text-5xl mt-7 ml-12 text-left"
             style={{ fontFamily: "var(--p-font)" }}
           >
             Your Shopping Basket
           </h1>
+
           {basket.map((item) => {
             return <CheckoutProduct key={item.id} item={item} />;
           })}

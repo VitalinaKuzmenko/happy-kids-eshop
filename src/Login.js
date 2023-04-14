@@ -37,7 +37,7 @@ const Login = () => {
         <h2 className="logoTitle">happy kids</h2>
       </Link>
 
-      <div className="login__container">
+      <div className="login__container max-w-xs sm:max-w-lg">
         <h1>Sign-in</h1>
 
         <form onSubmit={signIn}>

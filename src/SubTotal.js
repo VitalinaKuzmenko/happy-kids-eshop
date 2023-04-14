@@ -6,7 +6,7 @@ import { getBasketTotal } from "./Reducer";
 const SubTotal = () => {
   const [{ basket }, dispatch] = useStateValue();
   return (
-    <div className="subtotal">
+    <div className="subtotal ml-12 mr-12">
       <p>
         Subtotal ({basket.length} items):{" "}
         <strong>${getBasketTotal(basket)}</strong>

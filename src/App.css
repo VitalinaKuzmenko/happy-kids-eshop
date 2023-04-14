@@ -49,3 +49,28 @@
     transform: rotate(360deg);
   }
 }
+
+.checkout-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto auto;
+  grid-template-areas:
+    "sub"
+    "check";
+}
+
+.subtotal {
+  grid-area: sub;
+}
+
+.checkout-product {
+  grid-area: check;
+}
+
+@media (min-width: 768px) {
+  .checkout-grid {
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: "check sub";
+  }
+}

@@ -56,7 +56,7 @@ const Footer = () => {
             }}
             required
           />
-          <button className="subscribe-button" type="submit">
+          <button className="subscribe-button mt-5 sm:mt-1" type="submit">
             Subscribe Now
           </button>
         </div>
@@ -64,7 +64,7 @@ const Footer = () => {
           {isSubscribed && "Thank you for subscribing!"}
         </p>
       </form>
-      <p className="pb-5">
+      <p className="pb-5 px-5">
         This website design was created by Wix.com, and is used here for
         strictly educational purposes.
       </p>
