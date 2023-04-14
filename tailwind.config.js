@@ -9,10 +9,5 @@ module.exports = {
   theme: {
     extend: {},
   },
-  plugins: [
-    require("tailwindcss"),
-    require("autoprefixer"),
-    require("flowbite/plugin"),
-    require("daisyui"),
-  ],
+  plugins: [require("tailwindcss"), require("autoprefixer")],
 };
